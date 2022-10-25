@@ -44,8 +44,17 @@ We are looking for feedback to improve Education Pathways and make it more usefu
 
 ## User Stories
 
+### Review System Interface
+<img width="630" alt="Screen Shot 2022-10-24 at 10 21 50 PM" src="https://user-images.githubusercontent.com/103273559/197667015-d0fc946d-93bc-4472-bf34-c7dc1e7fc74a.png">
+
 <img width="1440" alt="Screen Shot 2022-10-24 at 10 19 47 PM" src="https://user-images.githubusercontent.com/103273559/197666754-f0ba75b9-2228-44df-b2fe-4a76658c41ea.png">
 
-<img width="630" alt="Screen Shot 2022-10-24 at 10 21 50 PM" src="https://user-images.githubusercontent.com/103273559/197667015-d0fc946d-93bc-4472-bf34-c7dc1e7fc74a.png">
+### Minor Fliter
+<img width="627" alt="Screen Shot 2022-10-24 at 10 25 12 PM" src="https://user-images.githubusercontent.com/103273559/197667442-06e43885-b2d0-4cd9-a0a4-0c40627afc5d.png">
+
+<img width="1440" alt="Screen Shot 2022-10-24 at 10 27 09 PM" src="https://user-images.githubusercontent.com/103273559/197667631-47c5693b-9ebb-4b21-8de1-8a53ed38604e.png">
+
+
+
 
 
