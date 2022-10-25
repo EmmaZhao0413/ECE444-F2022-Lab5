@@ -41,6 +41,9 @@ We are looking for feedback to improve Education Pathways and make it more usefu
 
 `_formhelpers.html course.html       index.html        results.html`
 
+## Activity 2-5
+![](images/activity2345-2.png)
+![](images/activity2345-1.png)
 
 ## User Stories
 
