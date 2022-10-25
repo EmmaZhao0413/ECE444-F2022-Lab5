@@ -40,3 +40,12 @@ We are looking for feedback to improve Education Pathways and make it more usefu
 `./templates:` *contains flask templates for rendering HTML*
 
 `_formhelpers.html course.html       index.html        results.html`
+
+
+## User Stories
+
+<img width="1440" alt="Screen Shot 2022-10-24 at 10 19 47 PM" src="https://user-images.githubusercontent.com/103273559/197666754-f0ba75b9-2228-44df-b2fe-4a76658c41ea.png">
+
+<img width="630" alt="Screen Shot 2022-10-24 at 10 21 50 PM" src="https://user-images.githubusercontent.com/103273559/197667015-d0fc946d-93bc-4472-bf34-c7dc1e7fc74a.png">
+
+
