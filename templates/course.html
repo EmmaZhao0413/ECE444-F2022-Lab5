@@ -9,6 +9,7 @@
 <h1 style="text-align: center">Education Pathways</h1>
 
 <body>
+  <div><button type="button" onclick="alert('This has been reported to administrator. Thank you for the notice!')">Click here if this page contain incorrect information.</button></div>
     {% for k,v in course.items() %}
         <p>
             <b>{{k}}:</b> {{v | safe}}
