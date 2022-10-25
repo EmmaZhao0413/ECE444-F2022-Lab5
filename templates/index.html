@@ -19,6 +19,7 @@
 </div>
 
 {% from "_formhelpers.html" import render_field %}
+<h3> Search for courses </h3>
 <form method="post" class="common-page-form">
   <dl>
     {{ render_field(form.select) }}
@@ -34,7 +35,7 @@
   </dl>
   <p>{{render_field(form.top)}} <button type="submit" class="btn btn-primary common-page-submit-btn">Search</button>
 </p>
-<h3> Search for courses </h3>
+
 </form>
 </body>
 </doctype>
