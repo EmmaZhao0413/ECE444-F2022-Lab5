@@ -7,7 +7,7 @@ from collections import defaultdict
 from scipy.sparse import load_npz
 from sklearn.metrics.pairwise import cosine_similarity
 from flask import Flask, render_template, request, redirect
-from wtforms import Form, StringField, SelectField
+from wtforms import Form, StringField, SelectField, validators
 
 """Build the search form, including dropdown menus at the top of the page, from the main datafile."""
 class CourseSearchForm(Form):
@@ -27,6 +27,10 @@ class CourseSearchForm(Form):
     year_choices = [
         (t,t) for t in set(df['Course Level'].values)
     ]
+    
+    minor_choices = [
+        (t,t) for t in set(df['Course Level'].values)
+    ]
             
     top = [
         ('10','10'),
@@ -39,7 +43,17 @@ class CourseSearchForm(Form):
     departments = SelectField('Department:', choices=departments)
     campuses = SelectField('Campus:', choices=campus)
     search = StringField('Search Terms:')
-
+    minor_search = StringField('Minor Choices:')
+    
+# Need a new class
+class CourseReviewForm(Form):
+    level_choices = [
+        (t,t) for t in (0,10)
+    ]
+    course_to_review = StringField('Course you would like to provide feedback:',validators=[validators.Length(min=6,max=20)])
+    select_course_load = SelectField('Course Load:', choices=level_choices)
+    select_course_complexity = SelectField('Level of Complexity:', choices=level_choices)
+    
 def create_app():
     app = Flask(__name__, instance_relative_config=True)
     try:
@@ -54,6 +68,13 @@ def create_app():
         if request.method == 'POST':
             return search_results(search)
         return render_template('index.html',form=search)
+        
+    @app.route('/review',methods=['GET','POST'])
+    def review():
+        review = CourseReviewForm(request.form)
+        if request.method == 'POST':
+            print(form.course_to_review.data)
+        return render_template('review.html',form=review)
 
     """Handle the data from the POST request that will go to the main algorithm.
     If we get an empty search, just go back to home.
