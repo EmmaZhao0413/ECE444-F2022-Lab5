@@ -54,7 +54,10 @@ We are looking for feedback to improve Education Pathways and make it more usefu
 
 <img width="1440" alt="Screen Shot 2022-10-24 at 10 27 09 PM" src="https://user-images.githubusercontent.com/103273559/197667631-47c5693b-9ebb-4b21-8de1-8a53ed38604e.png">
 
-
+### Flag inaccurate course page
+![](images/activity6-1.png)
+![](images/activity6-2.png)
+![](images/activity6-3.png)
 
 
 
